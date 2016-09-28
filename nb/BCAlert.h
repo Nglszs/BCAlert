@@ -31,10 +31,13 @@
 @property (nonatomic, weak) id <CustomAlertDelegate> delegate;
 
 /**
- *  初始化方法
+ *  初始化方法,如果想去掉引用警告，则自己拆分出一个show方法，这里不再实现
  */
 
 - (instancetype) initWithTitle:(NSString *)title content:(NSString *)contentText cancelButton:(NSString *)cancelTitle
    endSureButton:(NSString *)sureTitle delegate:(id)delegate;
+
+
+
 
 @end

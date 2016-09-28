@@ -28,7 +28,7 @@
 @implementation BCAlert
 
 
-- (instancetype)initWithTitle:(NSString *)title content:(NSString *)contentText cancelButton:(NSString *)cancelTitle endSureButton:(NSString *)sureTitle delegate:(id)delegate {
+- (instancetype) initWithTitle:(NSString *)title content:(NSString *)contentText cancelButton:(NSString *)cancelTitle endSureButton:(NSString *)sureTitle delegate:(id)delegate {
 
     _titleStr = title;
     _contentStr = contentText;
@@ -171,7 +171,8 @@
     
     mainView.frame = CGRectMake((CGRectGetWidth(self.frame) - 270)/2, (CGRectGetHeight(self.frame) - height)/2, 270, height);
     
-    
+   
+    //这里可以按照自己需求加上动画，这里不再写
     _window = [[UIWindow alloc]initWithFrame:self.frame];
     _window.windowLevel = UIWindowLevelAlert + 1;
     

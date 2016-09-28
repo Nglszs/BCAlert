@@ -10,7 +10,7 @@
 #import "nb-Swift.h"
 #import <ReplayKit/ReplayKit.h>
 #import "BCAlert.h"
-@interface ViewController ()<CustomAlertDelegate>
+@interface ViewController ()<ClickAlertDelegate>
 
 @end
 
@@ -20,28 +20,26 @@
     [super viewDidLoad];
   
     
-       
+    CustomAlert *aler = [[CustomAlert alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-     
+   [aler setAlert:@"提示" message:@"呵呵" cancelButtonTitle:@"cancel" sureButtonTitle:@"ok" delegate:self];
+    
+    
+    
 }
 
-- (void)hehe {
 
-    NSLog(@"可以");
+- (void)clickAlertButton:(UIButton *)button {
+
+
+    NSLog(@"%ld",button.tag);
 
 }
 
-- (void)clickCustomAlertButton:(UIButton *)button {
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    if (button.tag == 0) {
-        
-        NSLog(@"点击了取消");
-    } else {
-    
-        NSLog(@"点击了确定");
-    
-    }
 
+    NSLog(@"ddd");
 }
 
 - (void)didReceiveMemoryWarning {

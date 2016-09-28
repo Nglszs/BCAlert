@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04C6EC1D1D9B5E400042F2D5 /* BCAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6EC1C1D9B5E400042F2D5 /* BCAlert.m */; };
+		04C6EC211D9B844B0042F2D5 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6EC201D9B844B0042F2D5 /* CustomAlert.swift */; };
 		04FC78D41D7006E9003FAF9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC78D31D7006E9003FAF9E /* main.m */; };
 		04FC78D71D7006E9003FAF9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC78D61D7006E9003FAF9E /* AppDelegate.m */; };
 		04FC78DA1D7006E9003FAF9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC78D91D7006E9003FAF9E /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		04FC78E21D7006E9003FAF9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04FC78E01D7006E9003FAF9E /* LaunchScreen.storyboard */; };
 		04FC78ED1D7006E9003FAF9E /* nbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC78EC1D7006E9003FAF9E /* nbTests.m */; };
 		04FC78F81D7006E9003FAF9E /* nbUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FC78F71D7006E9003FAF9E /* nbUITests.m */; };
-		04FC79071D70070F003FAF9E /* newView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FC79061D70070F003FAF9E /* newView.swift */; };
 		04FC790B1D70178A003FAF9E /* bc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04FC790A1D70178A003FAF9E /* bc.jpg */; };
 		04FC79251D7017E5003FAF9E /* loading_gold_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FC790D1D7017E5003FAF9E /* loading_gold_10@2x.png */; };
 		04FC79261D7017E5003FAF9E /* loading_gold_10@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04FC790E1D7017E5003FAF9E /* loading_gold_10@3x.png */; };
@@ -64,6 +64,7 @@
 /* Begin PBXFileReference section */
 		04C6EC1B1D9B5E400042F2D5 /* BCAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAlert.h; sourceTree = "<group>"; };
 		04C6EC1C1D9B5E400042F2D5 /* BCAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAlert.m; sourceTree = "<group>"; };
+		04C6EC201D9B844B0042F2D5 /* CustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		04FC78CF1D7006E9003FAF9E /* nb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FC78D31D7006E9003FAF9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04FC78D51D7006E9003FAF9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		04FC78F71D7006E9003FAF9E /* nbUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nbUITests.m; sourceTree = "<group>"; };
 		04FC78F91D7006E9003FAF9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FC79051D70070F003FAF9E /* nb-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nb-Bridging-Header.h"; sourceTree = "<group>"; };
-		04FC79061D70070F003FAF9E /* newView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newView.swift; sourceTree = "<group>"; };
 		04FC790A1D70178A003FAF9E /* bc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bc.jpg; sourceTree = "<group>"; };
 		04FC790D1D7017E5003FAF9E /* loading_gold_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_gold_10@2x.png"; sourceTree = "<group>"; };
 		04FC790E1D7017E5003FAF9E /* loading_gold_10@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading_gold_10@3x.png"; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				04FC78D61D7006E9003FAF9E /* AppDelegate.m */,
 				04FC78D81D7006E9003FAF9E /* ViewController.h */,
 				04FC78D91D7006E9003FAF9E /* ViewController.m */,
-				04FC79061D70070F003FAF9E /* newView.swift */,
+				04C6EC201D9B844B0042F2D5 /* CustomAlert.swift */,
 				04C6EC1B1D9B5E400042F2D5 /* BCAlert.h */,
 				04C6EC1C1D9B5E400042F2D5 /* BCAlert.m */,
 				04FC78DB1D7006E9003FAF9E /* Main.storyboard */,
@@ -389,8 +389,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FC78DA1D7006E9003FAF9E /* ViewController.m in Sources */,
-				04FC79071D70070F003FAF9E /* newView.swift in Sources */,
 				04FC78D71D7006E9003FAF9E /* AppDelegate.m in Sources */,
+				04C6EC211D9B844B0042F2D5 /* CustomAlert.swift in Sources */,
 				04FC78D41D7006E9003FAF9E /* main.m in Sources */,
 				04C6EC1D1D9B5E400042F2D5 /* BCAlert.m in Sources */,
 			);
