@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "nb-Swift.h"
+#import <ReplayKit/ReplayKit.h>
+#import "BCAlert.h"
+@interface ViewController ()<CustomAlertDelegate>
 
 @end
 
@@ -16,7 +18,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+  
+    
+       
+    
+     
+}
+
+- (void)hehe {
+
+    NSLog(@"可以");
+
+}
+
+- (void)clickCustomAlertButton:(UIButton *)button {
+
+    if (button.tag == 0) {
+        
+        NSLog(@"点击了取消");
+    } else {
+    
+        NSLog(@"点击了确定");
+    
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
