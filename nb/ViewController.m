@@ -10,7 +10,7 @@
 #import "nb-Swift.h"
 #import <ReplayKit/ReplayKit.h>
 #import "BCAlert.h"
-@interface ViewController ()<ClickAlertDelegate>
+@interface ViewController ()<ClickAlertDelegate,CustomAlertDelegate>
 
 @end
 
@@ -26,9 +26,13 @@
     
     
     
+    //oc
+    
+    //BCAlert *OCAlert = [[BCAlert alloc] initWithTitle:@"警告" content:@"内容" cancelButton:@"cancel" endSureButton:@"ok" delegate:self];
+    
 }
 
-
+//swift 代理
 - (void)clickAlertButton:(UIButton *)button {
 
 
@@ -36,10 +40,13 @@
 
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
+//oc代理
 
-    NSLog(@"ddd");
+- (void)clickCustomAlertButton:(UIButton *)button {
+
+    NSLog(@"%ld",button.tag);
+
 }
 
 - (void)didReceiveMemoryWarning {
