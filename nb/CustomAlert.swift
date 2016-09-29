@@ -106,11 +106,15 @@ public class CustomAlert: UIView {
     //赋值方法
     public func setAlert(title: String?, message: String?, cancelButtonTitle: String?, sureButtonTitle: String?,delegate:AnyObject?){
     
+     let isShow = NSUserDefaults.standardUserDefaults().boolForKey("SwiftIsShowAlert")
        
-        self.delegate = delegate as? ClickAlertDelegate
+        if isShow {
+          
+            return
+        }
         
-       
-  
+        
+        self.delegate = delegate as? ClickAlertDelegate
         self.tipLabel.text = title
         self.contentLabel.text = message
         self.cancelButton.setTitle(cancelButtonTitle, forState: .Normal)
@@ -192,7 +196,8 @@ public class CustomAlert: UIView {
         self.alertWindow.addSubview(self);
         self.alertWindow.makeKeyAndVisible()
         
-        
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "SwiftIsShowAlert")
+        NSUserDefaults.standardUserDefaults().synchronize()
         
     }
     
@@ -219,7 +224,8 @@ public class CustomAlert: UIView {
         self.alertWindow.resignKeyWindow()
      
         
-    
+        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "SwiftIsShowAlert")
+        NSUserDefaults.standardUserDefaults().synchronize()
     
     }
     

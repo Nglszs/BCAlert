@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    
+    //swift
     CustomAlert *aler = [[CustomAlert alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
    [aler setAlert:@"提示" message:@"呵呵" cancelButtonTitle:@"cancel" sureButtonTitle:@"ok" delegate:self];
