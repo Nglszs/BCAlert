@@ -15,6 +15,8 @@
 
 - (void)clickCustomAlertButton:(UIButton *)button;
 
+
+
 @end
 
 @interface BCAlert : UIView

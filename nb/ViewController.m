@@ -28,7 +28,7 @@
     
     //oc
     
-    //BCAlert *OCAlert = [[BCAlert alloc] initWithTitle:@"警告" content:@"内容" cancelButton:@"cancel" endSureButton:@"ok" delegate:self];
+//    BCAlert *OCAlert = [[BCAlert alloc] initWithTitle:@"警告" content:@"内容" cancelButton:@"cancel" endSureButton:@"ok" delegate:self];
     
 }
 
@@ -47,6 +47,11 @@
 
     NSLog(@"%ld",button.tag);
 
+}
+
+- (NSInteger)pringtheh {
+
+    return 10086;
 }
 
 - (void)didReceiveMemoryWarning {

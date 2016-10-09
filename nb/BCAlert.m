@@ -205,6 +205,8 @@
     if ([self.delegate respondsToSelector:@selector(clickCustomAlertButton:)]) {
         
         [self.delegate clickCustomAlertButton:btn];
+        
+       
     
     }
    
